@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​What is a Data Pipeline and How Does it Work?, ​Data Pipeline vs ETL, ​Types of Data Pipelines: Batch vs Streaming, ​AWS Data Pipeline">
+    <meta name="description" content="">
+    <title>data pipelines explained</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="data-pipelines-explained.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.11.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="data pipelines explained">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="data-pipelines-explained.html" data-home-page-title="data pipelines explained" class="u-body u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-0663"><div class="u-align-left u-clearfix u-sheet u-sheet-1"></div></header>
+    <section class="u-clearfix u-section-1" id="sec-fdae">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-1"> What is a Data Pipeline and How Does it Work?</h1>
+        <p class="u-align-justify u-text u-text-2"> A data pipeline is a series of data preprocessing steps where data is extracted from one or more sources, transformed into a format suitable for analysis and finally stored in a data lake or a data warehouse for further use. Data pipelines can manage not just the process data but also preserve the quality and accessibility of data.<br>
+          <br>Data pipelines consist of three essential elements:<br>&nbsp;<span style="font-weight: 700;">1) A source or sources</span>, data from multiple sources is first gathered and moved into a pipeline.<br>&nbsp;<span style="font-weight: 700;">2) Processing steps,</span> the raw data (structured or not) is then processed and transformed to align with the desired output.<br>&nbsp;<span style="font-weight: 700;">3) A destination</span>, the output is stored in a data lake or cloud data warehouse, ready for analytics.&nbsp;<br>
+        </p>
+        <h2 class="u-text u-text-3"> Data Pipeline vs ETL</h2>
+        <p class="u-align-justify u-text u-text-4"> ETL is an acronym for “Extract, Transform, and Load” and describes the three stages of the process. ETL pipeline is a term that if you are searching about pipelines you will definitely see it somewhere. It should not be used synonymously with the term data pipeline. Data pipeline is a broad category used to move data between systems, on the other hand ETL is a specific type of data pipeline. The ETL process is most appropriate for small data sets which require complex transformations. For larger data sets and when timeliness is important, the ELT (“Extract,, Load, and Transform”) process is more appropriate.
+Below are three key differences between the two to have a more clear view about the alteration of those two terms. </p>
+        <img class="u-align-center u-image u-image-default u-image-1" src="images/differences.png" alt="" data-image-width="1600" data-image-height="935">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-b49f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-1"> Types of Data Pipelines: Batch vs Streaming</h2>
+        <p class="u-align-justify u-text u-text-2"> Data pipelines can broadly be classified into two types based on their operation: batch processing and streaming data pipelines. </p>
+        <h3 class="u-text u-text-default u-text-3"> Batch processing (historical data)</h3>
+        <p class="u-align-justify u-text u-text-4"> It involves collecting data over a specific period then processing it in bulk. Traditional batch processing where data is periodically extracted, transformed and loaded to a target system is sufficient. </p>
+        <img class="u-align-center u-image u-image-default u-image-1" src="images/etlprocess.png" alt="" data-image-width="2000" data-image-height="1083">
+        <h3 class="u-text u-text-5"> Benefits of ETL Process</h3>
+        <ul class="u-text u-text-6">
+          <li> Data analysis on a pre-defined, structured and transformed dataset can be more stable and faster with the ETL process.</li>
+          <li> Compliance with GDPR, HIPAA and CCPA standards is easier with ETL given that users can omit any sensitive data prior to loading in the target system.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-1106">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1"> Streaming data</h3>
+        <p class="u-align-justify u-text u-text-2"> Streaming data pipelines hadle real-time data, processing new data points as they arrive. They are used when analytics requires continually flowing and updating data. Instead of loading data in batches, streaming pipelines move data continuously in real-time from source to target. It is more often used with unstructured data sets and when timeliness is important.</p>
+        <img class="u-align-center u-image u-image-default u-image-1" src="images/eltprocesslive.png" alt="" data-image-width="1600" data-image-height="884">
+        <h3 class="u-align-justify u-text u-text-3"> Benefits of ELT Process</h3>
+        <ul class="u-align-justify u-text u-text-4">
+          <li> Real-time flexible data analysis. Users have the ability to explore the complete dataset, without having to wait for IT to extract, transform and load more data.</li>
+          <li> Lower cost and lower maintenance. ELT benefits from a robust ecosystem of cloud-based platforms which offer much lower costs and a variety of plan options to store and process data.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-728e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1"> AWS Data Pipeline</h2>
+        <p class="u-align-justify u-text u-text-2"> AWS data pipeline is a web service that it is offered by Amazon Web Service (AWS). This service allows you to easily move and transform data within the AWS ecosystem, such as archiving Web server logs to Amazon S3 or generating traffic reports by running a weekly Amazon EMR cluster over those logs.</p>
+        <h3 class="u-text u-text-3"> Benefits of AWS Data Pipelines</h3>
+        <ul class="u-text u-text-4">
+          <li> AWS is bulit on a distributed, highly available architecture.</li>
+          <li> AWS pipeline is very scalable due to its flexibility. It processes milion files, in serial or parallel, as simple as processes one file.</li>
+          <li> It provides a variety of features such as scheduling, dependency tracking and error handling.</li>
+          <li> Provides total control over the computing resources used to carry out your data pipeline logic.</li>
+        </ul>
+        <h3 class="u-text u-text-5"> Alternatives</h3>
+        <ol class="u-text u-text-6">
+          <li>
+            <span style="font-weight: 700;"> Hevo</span>, is a no-code data pipeline platform that helps new-age businesses integrate their data from multiple sources to any data warehouse in almost real-time.
+          </li>
+          <li>
+            <span style="font-weight: 700;"> AWS Glue</span>, is a fully managed ETL service that makes it easy for customers to prepare and load their data for analytics. You can create and run an ETL job with a few clicks in the AWS Management Console.
+          </li>
+          <li>
+            <span style="font-weight: 700;"> Apache NiFi</span>, helps to fetch, aggregate, split, transform, listen, route, and drag &amp; drop dataflow. It visualizes the dataflow at an enterprise level.
+          </li>
+        </ol>
+      </div>
+    </section>
+    
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  </body>
+</html>
