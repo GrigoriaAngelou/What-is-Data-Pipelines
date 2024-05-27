@@ -4,4 +4,4 @@ A data pipeline is a series of data preprocessing steps where data is extracted 
 Which are the types of a data pipeline?
 What are the benefits of each type?
 <br> <br>
-**Discover more:** [here]([https://grigoriaangelou.github.io/Global-and-Europian-Analysis-for-Life-expectancy/](https://grigoriaangelou.github.io/what-is-data-pipelines/)) 
+**Discover more:** [here]([https://grigoriaangelou.github.io/Global-and-Europian-Analysis-for-Life-expectancy/](https://grigoriaangelou.github.io/what-is-data-pipelines/) 
