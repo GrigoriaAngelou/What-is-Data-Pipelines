@@ -1,4 +1,4 @@
-# what-is-data-pipelines
+# What is Data Pipelines
 
 A data pipeline is a series of data preprocessing steps where data is extracted from one or more sources, transformed into a format suitable for analysis and finally stored in a data lake or a data warehouse for further use. </br>
 </br>
