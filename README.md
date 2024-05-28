@@ -6,4 +6,4 @@ Which are the types of a data pipeline?
 </br>
 What are the benefits of each type?
 </br> </br>
-**Discover more:** [here](https://grigoriaangelou.github.io/what-is-data-pipelines/) 
+**Discover more:** [here](https://grigoriaangelou.github.io/What-is-Data-Pipelines/) 
